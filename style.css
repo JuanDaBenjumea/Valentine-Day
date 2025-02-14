@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffe5e5;
+}
+
+/* Contenedor del GIF */
+.gif-container {
+    width: 200px;
+    height: 155px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tenor-gif-embed {
+    width: 200px !important;
+    height: 155px !important;
+}
+
+/* Botones */
+.btn {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn a:hover {
+    transform: scale(1.1);
+}
+
+/* Tamaño inicial de los botones */
+#siButton {
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+#noButton {
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+/* Último estado del botón "SÍ" cuando cubre toda la pantalla */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    background-color: #d63384; /* Rosa oscuro */
+    color: white; /* Texto blanco */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    box-shadow: none;
+}
+
+
